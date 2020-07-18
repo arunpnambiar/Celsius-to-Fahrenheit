@@ -1,0 +1,14 @@
+
+<h1>Temparature Calculator</h1>
+ <div class="container"> 
+   <div class="converter">
+    <mat-form-field appearance="fill" color="Accent" >
+      <mat-label>Celsius</mat-label>
+      <input matInput type="number" name="celsius" [(ngModel)]="data.celsius" (ngModelChange)="temparatureConverter('C')">
+    </mat-form-field>
+    <mat-form-field appearance="fill" color="Accent">
+      <mat-label>Fahrenheit</mat-label>
+      <input matInput type="number" name="fahrenheit" [(ngModel)]="data.fahrenheit" (ngModelChange)="temparatureConverter('F')">
+    </mat-form-field>
+  </div>
+</div>
